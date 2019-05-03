@@ -8,7 +8,7 @@ namespace Sitecore.Support.XA.Feature.Redirects.Pipelines.HttpRequest
     {
       foreach (var mapping in MappingsMap)
       {
-        if ((!mapping.IsRegex && mapping.Pattern == filePath) || (mapping.IsRegex && mapping.Regex.IsMatch(filePath)))
+        if ((!mapping.IsRegex && mapping.Pattern == filePath) || (mapping.IsRegex && mapping.Regex.IsMatch(filePath)) || (Context?.RawUrl != null && mapping.Pattern == Context.RawUrl.ToLower()))
         {
           return mapping;
         }
