@@ -54,7 +54,12 @@
       <HintPath>..\packages\SXA90.Sitecore.XA.Foundation.Abstractions.1.8.0\lib\Sitecore.XA.Foundation.Abstractions.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="Sitecore.XA.Foundation.Multisite, Version=3.8.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\SXA90.Sitecore.XA.Foundation.Multisite.1.8.0\lib\Sitecore.XA.Foundation.Multisite.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Web" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
